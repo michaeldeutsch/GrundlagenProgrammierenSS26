@@ -1,4 +1,4 @@
-package einheit02;
+package einheit02.schleife;
 
 public class ForSchleife {
     static void main() {
