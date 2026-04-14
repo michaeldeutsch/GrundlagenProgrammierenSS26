@@ -1,14 +1,10 @@
 package einheit02.entscheidungen;
 
+/**
+ * Beispiel für die klassische switch-Syntax zur Fallunterscheidung.
+ */
 public class SwitchBeispiel {
-
     static void main() {
-
-        // 1-3 = Jan, Feb, Mar --> Frühling
-        // 4-6 = Apr, May, Jun --> Sommer
-        // 7-9 = Jul, Aug, Sep --> Herbst
-        // 10-12 = Oct, Nov, Dec --> Winter
-
         int monat = 1;
 
         switch (monat) {
@@ -22,10 +18,7 @@ public class SwitchBeispiel {
                 System.out.println("März");
                 break;
             default:
-                System.out.println("Unbekannt");
-
+                System.out.println("Unbekannter Monat");
         }
-
-
     }
 }

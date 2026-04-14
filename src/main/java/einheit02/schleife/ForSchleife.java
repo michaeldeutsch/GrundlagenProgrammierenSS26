@@ -1,33 +1,20 @@
 package einheit02.schleife;
 
+/**
+ * Einführung in die for-Schleife und Inkrement-/Dekrement-Operatoren.
+ */
 public class ForSchleife {
     static void main() {
+        System.out.println("Beispiel für for-Schleifen");
 
-        System.out.println("Wiederhole aka Algorithmen");
-
+        // Inkrement- und Dekrement-Operatoren
         int j = 1;
-        j = j + 1;
         j++;
-        j--;
-        ++j;
-        --j;
+        System.out.println("j nach j++: " + j);
 
-//    int zahl1 = 10;
-//        System.out.println(zahl1);
-//
-//        System.out.println(j);
-
-        for(int i = 1; i <= 10; i = i + 2){
-                      System.out.println(i);
-
+        // Ausgabe ungerader Zahlen von 1 bis 10
+        for (int i = 1; i <= 10; i += 2) {
+            System.out.println("i: " + i);
         }
-
-
-
-
     }
-
-
-
-
 }

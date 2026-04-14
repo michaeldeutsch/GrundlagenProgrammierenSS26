@@ -2,17 +2,15 @@ package einheit03.zeichen;
 
 import java.util.concurrent.ThreadLocalRandom;
 
+/**
+ * Demonstriert den Umgang mit Zeichen (char) und die Generierung von Zufallswerten.
+ */
 public class CharacterDemo {
-
     static void main(String[] args) {
+        // Beispiel für ein zufälliges Zeichen im Bereich 'a' bis 'z'
+        int zufallsWert = ThreadLocalRandom.current().nextInt('a', 'z' + 1);
+        char zufallsZeichen = (char) zufallsWert;
 
-        // Ein Passwort in einer beliebigen Länge, d.h. 8-12 soll generiert werden mit druckbaren Zeichen
-        // Am Ende wird das Passwort ausgegeben
-        // die Länge des Passwort ist ebenso per Zufall in besagter Range zu definieren
-
-        int zahl = ThreadLocalRandom.current().nextInt(98, 122 + 1);
-        System.out.println((char) zahl);
-
-
+        System.out.println("Zufälliges Zeichen: " + zufallsZeichen + " (ASCII: " + zufallsWert + ")");
     }
 }

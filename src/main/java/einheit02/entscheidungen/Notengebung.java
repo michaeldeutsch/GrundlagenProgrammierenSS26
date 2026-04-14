@@ -1,16 +1,16 @@
 package einheit02.entscheidungen;
 
+/**
+ * Ermittelt eine Note basierend auf einer erreichten Punktzahl (Score).
+ */
 public class Notengebung {
-
     static void main() {
-
-
         int score = 66;
 
         if (score > 90) {
-            System.out.println("Sehr gut ");
+            System.out.println("Sehr gut");
         } else if (score > 80) {
-            System.out.println("gut ");
+            System.out.println("Gut");
         } else if (score > 70) {
             System.out.println("Befriedigend");
         } else if (score > 60) {
@@ -18,10 +18,5 @@ public class Notengebung {
         } else {
             System.out.println("Nicht genügend");
         }
-
-        // Werte <0 und > 100 --> Datengrundlage invalid, keine Berechnung
-        // Werte legetim, Note nach Punkte beurteilt
-
-
     }
 }

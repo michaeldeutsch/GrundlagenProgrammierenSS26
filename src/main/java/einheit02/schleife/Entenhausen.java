@@ -1,23 +1,22 @@
 package einheit02.schleife;
 
+/**
+ * Löst ein Verteilungsproblem für drei Personen (Trick, Track, Tick) unter bestimmten Bedingungen.
+ */
 public class Entenhausen {
-
     static void main() {
+        int gesamtGeld = 500;
 
-        int geld = 500;
+        // Bedingungen: Jeder bekommt etwas (>0), Track bekommt eine gerade Summe,
+        // Tick bekommt mehr als Trick, und keiner bekommt mehr als die Hälfte des Gesamtgeldes.
+        for (int trick = 1; trick < gesamtGeld / 2; trick++) {
+            for (int track = 2; track < gesamtGeld / 2; track += 2) {
+                int tick = gesamtGeld - trick - track;
 
-        // trick track tick, jeder bekommt etwas, track bekommt eine gerade Summe,
-        // tick bekommt mehr als trick, und keiner bekommt mehr als die Hälfe
-
-        for (int trick = 0; trick < geld; trick++) {
-            for (int track = 0; track < geld; track++) {
-                for (int tick = 0; tick < geld; tick++) {
-
+                if (tick > 0 && tick < gesamtGeld / 2 && tick > trick) {
+                    System.out.println("Trick: " + trick + ", Track: " + track + ", Tick: " + tick);
                 }
             }
         }
-
-
-
     }
 }

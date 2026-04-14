@@ -2,26 +2,21 @@ package einheit02.schleife;
 
 import javax.swing.*;
 
+/**
+ * Demonstriert eine einfache Authentifizierungslogik mittels String-Vergleichen und Dialogfenstern.
+ */
 public class Login {
-
     static void main() {
+        final String correctUsername = "Michael";
+        final String correctPassword = "123";
 
-        String CORRECT_USERNAME = "Michael";
-        String CORRECT_PASSWORD = "Michael";
+        String usernameInput = "Michael";
+        String passwordInput = "123";
 
-
-        String userInput2 = "hh";
-        String passwordInput = "Michael";
-
-        if(CORRECT_USERNAME.equalsIgnoreCase(userInput2)  &&  CORRECT_PASSWORD.equals(passwordInput)){ // 1:1
-            JOptionPane.showMessageDialog(null, "Guten Tag " + userInput2);
-        }else{
-            JOptionPane.showMessageDialog(null, "Falscher Benutzername oder Passwort");
+        if (correctUsername.equalsIgnoreCase(usernameInput) && correctPassword.equals(passwordInput)) {
+            JOptionPane.showMessageDialog(null, "Anmeldung erfolgreich. Guten Tag " + usernameInput + "!");
+        } else {
+            JOptionPane.showMessageDialog(null, "Benutzername oder Passwort falsch.", "Login Fehler", JOptionPane.ERROR_MESSAGE);
         }
-
-
-
-
     }
-
 }

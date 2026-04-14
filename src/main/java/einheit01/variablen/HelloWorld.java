@@ -1,20 +1,11 @@
 package einheit01.variablen;
 
+/**
+ * Klassisches Einsteigerbeispiel zur Ausgabe von Text auf der Konsole.
+ */
 public class HelloWorld {
-
-
     static void main(String[] args) {
-
-        String name = "MIchael 123123 ! asdf";
-
-
-        System.out.println("Hello " +  name);
-
-
-
-
-
+        String name = "Michael";
+        System.out.println("Hello " + name);
     }
-
-
 }
