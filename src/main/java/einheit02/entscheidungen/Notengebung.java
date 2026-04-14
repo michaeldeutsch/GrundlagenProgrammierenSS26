@@ -1,4 +1,4 @@
-package einheit02;
+package einheit02.entscheidungen;
 
 public class Notengebung {
 
@@ -7,22 +7,20 @@ public class Notengebung {
 
         int score = 66;
 
-        if(score > 90){
+        if (score > 90) {
             System.out.println("Sehr gut ");
-        } else if(score > 80){
+        } else if (score > 80) {
             System.out.println("gut ");
-        }else if(score > 70){
+        } else if (score > 70) {
             System.out.println("Befriedigend");
-        }else if(score > 60){
+        } else if (score > 60) {
             System.out.println("Genügend");
-        }else{
+        } else {
             System.out.println("Nicht genügend");
         }
 
         // Werte <0 und > 100 --> Datengrundlage invalid, keine Berechnung
         // Werte legetim, Note nach Punkte beurteilt
-
-
 
 
     }

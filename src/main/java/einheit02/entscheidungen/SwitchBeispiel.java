@@ -1,4 +1,4 @@
-package einheit02;
+package einheit02.entscheidungen;
 
 public class SwitchBeispiel {
 
@@ -11,7 +11,7 @@ public class SwitchBeispiel {
 
         int monat = 1;
 
-        switch(monat){
+        switch (monat) {
             case 1, 4, 7, 10:
                 System.out.println("Jänner");
                 break;
@@ -25,10 +25,6 @@ public class SwitchBeispiel {
                 System.out.println("Unbekannt");
 
         }
-
-
-
-
 
 
     }

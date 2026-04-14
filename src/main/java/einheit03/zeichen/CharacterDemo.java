@@ -1,4 +1,4 @@
-package einheit03;
+package einheit03.zeichen;
 
 import java.util.concurrent.ThreadLocalRandom;
 

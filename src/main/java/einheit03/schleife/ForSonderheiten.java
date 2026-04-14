@@ -1,4 +1,4 @@
-package einheit03;
+package einheit03.schleife;
 
 public class ForSonderheiten {
 

@@ -1,89 +1,188 @@
-# Grundlagen Programmieren SS26
+# Grundlagen Programmieren – Kurs-Repository (SS26)
 
-Repository for the course **Grundlagen Programmieren** (Foundations of Programming) for the Summer Semester 2026 at **FH
-BFI Wien**. This project contains introductory Java programming exercises and examples covering various fundamental
-concepts.
+## Einführung
 
-## 🚀 Overview
+Dieses Repository enthält die **Beispiele und Materialien der Lehrveranstaltung _Grundlagen Programmieren_** im
+Sommersemester 2026.  
+Es dokumentiert den **Fortschritt der Vorlesung** und stellt den Studierenden den **während der Einheiten entwickelten
+Code** zur Verfügung.
 
-The project is structured into units (Einheiten) that follow the curriculum of the course:
+Das Repository wächst im Laufe des Semesters und spiegelt die **chronologische Entwicklung von Themen, Werkzeugen und
+Programmierkonzepten** wider, die in der LV eingeführt werden.
 
-- **Einheit 01**: Variables, Basic Input/Output, Branching.
-- **Einheit 02**: Control Structures (Switch, Loops), Logic, and fundamental algorithms.
-- **Lösungen**: Sample solutions for exercises.
+Studierende können dieses Repository nutzen, um:
 
-## 🛠️ Stack
+- auf LV-Beispiele zuzugreifen
+- besprochene Technologien zu vertiefen
+- den Kursfortschritt nachzuverfolgen
+- den aktuellsten Code aus der Vorlesung abzurufen
 
-- **Language**: Java 25
-- **Build Tool / Package Manager**: Maven
-- **Organization**: `fhbfiwien`
+---
 
-## 📋 Requirements
+## Repository-Struktur
 
-- **Java Development Kit (JDK) 25** or higher.
-- **Apache Maven** (for dependency management and building).
+Das Projekt folgt einer **standardmäßigen Maven-basierten Java-Struktur**.
 
-## ⚙️ Setup & Run
+```text
+src
+ └─ main
+     ├─ java
+     │   ├─ einheit01          # Grundlagen: Variablen, Input, Verzweigung
+     │   │   ├─ einlesen       # Scanner-Nutzung
+     │   │   ├─ variablen      # Datentypen, Berechnungen (BMI, Rechner)
+     │   │   └─ verzweigung    # If/Else-Logik
+     │   ├─ einheit02          # Kontrollstrukturen: Switch, Schleifen
+     │   │   ├─ entscheidungen # If/Else-Kaskaden, Switch-Syntax
+     │   │   ├─ mathematik     # Summenformeln, Berechnungen
+     │   │   ├─ schleife       # For/While, Logik (Entenhausen, Login)
+     │   │   └─ grundlagen     # Recap & Einführung
+     │   ├─ einheit03          # Vertiefung: Datentypen, Algorithmen
+     │   │   ├─ zeichen        # Arbeiten mit char & ASCII
+     │   │   ├─ zeit           # Simulation von Zeitabläufen
+     │   │   ├─ algorithmen    # Passwort-Gen, komplexe Rätsel
+     │   │   └─ schleife       # Schleifen-Sonderheiten
+     │   └─ loesung            # Musterlösungen zu den Übungen
+     └─ resources
+pom.xml                        # Maven Konfiguration
+```
 
-### Clone the Repository
+Jede Einheit (Einheit 01, 02, etc.) enthält die Beispiele und Experimente der jeweiligen Vorlesungseinheit.
+
+---
+
+## Aktuelle Inhalte & Beispiele
+
+Die aktuellen Beispiele decken das Setup und die grundlegenden Konzepte der Programmierung ab:
+
+- **Einheit 01: Die ersten Schritte**
+    - Java Projekt-Setup & HelloWorld
+    - Einlesen von Daten via `Scanner`
+    - Einfache Berechnungen (z.B. BMI Rechner)
+    - Erste bedingte Anweisungen (`if-else`)
+- **Einheit 02: Logik & Wiederholungen**
+    - Komplexe Verzweigungen & `switch` (inkl. moderne Switch-Syntax)
+    - Schleifen-Konstrukte (`for`, `while`)
+    - Praktische Anwendungen (Einmaleins, Summenformel, Login-Logik)
+- **Einheit 03: Vertiefung & Datentypen**
+    - Arbeiten mit `char` und ASCII-Werten
+    - Generierung von Zufallszahlen (`ThreadLocalRandom`)
+    - Verschachtelte Schleifen & Passwort-Generierung
+
+---
+
+## Technologien
+
+Im Kurs werden aktuell folgende Technologien und Werkzeuge eingesetzt:
+
+- **Java 25** (OpenJDK)
+- **Maven** (Build-Management & Abhängigkeiten)
+- **IntelliJ IDEA** (Entwicklungsumgebung)
+- **Git** (Versionsverwaltung)
+
+---
+
+## Kenntnisfortschritt & Lernziele
+
+Nach jeder Einheit sollten bestimmte Kompetenzen erworben worden sein:
+
+| Einheit | Schwerpunkt         | Was man nun können sollte                                                                                    |
+|:--------|:--------------------|:-------------------------------------------------------------------------------------------------------------|
+| **01**  | Grundlagen & I/O    | Projekt anlegen, Variablen deklarieren, Benutzereingaben verarbeiten, einfache Fallunterscheidungen treffen. |
+| **02**  | Kontrollstrukturen  | Abläufe mittels Schleifen automatisieren, komplexe Entscheidungslogik mit Switch und If-Kaskaden abbilden.   |
+| **03**  | Datentypen & Zufall | Mit Zeichen (`char`) operieren, Zufallswerte generieren, algorithmische Probleme (z.B. Passwort-Gen) lösen.  |
+
+---
+
+## Einrichtung & Ausführung
+
+### Repository klonen:
 
 ```bash
 git clone <repository-url>
-cd GrundlagenProgrammierenSS26
 ```
 
-### Build the Project
+## Einheiten & Beispiele
 
-Use Maven to compile the source code:
+Hier finden Sie eine detaillierte Übersicht der behandelten Beispiele, deren Nutzen und die vermittelten Konzepte.
 
-```bash
-mvn compile
-```
+### Einheit 01: Grundlagen & I/O
 
-### Run a Specific Class
+In dieser Einheit werden die Basiskonzepte von Java eingeführt, einschließlich Variablen, Datentypen und einfachem
+Input/Output.
 
-Since this is a collection of standalone examples, you can run individual classes using your IDE (IntelliJ IDEA,
-Eclipse, etc.) or via the command line.
+- **HelloWorld**:
+    - **Nutzen**: Erstes Programm zur Überprüfung der Entwicklungsumgebung.
+    - **Besonderheiten**: Verwendung von `String`-Variablen und Konsolenausgabe.
+    - **Fähigkeiten**: Grundstruktur einer Java-Klasse, `main`-Methode, `System.out.println`.
+- **Einlesen**:
+    - **Nutzen**: Interaktion mit dem Benutzer über die Konsole.
+    - **Besonderheiten**: Verwendung der `Scanner`-Klasse zum Einlesen von Text.
+    - **Fähigkeiten**: Import von Klassen, Objektinstanziierung, Variablenzuweisung.
+- **Rechner & BMI_Rechner**:
+    - **Nutzen**: Durchführung einfacher mathematischer Berechnungen.
+    - **Besonderheiten**: Umgang mit verschiedenen numerischen Datentypen (`int`, `double`) und mathematischen
+      Operatoren.
+    - **Fähigkeiten**: Deklaration von Variablen, Wertzuweisung, einfache Arithmetik.
+- **Verzweigung**:
+    - **Nutzen**: Logische Entscheidungen im Programm treffen.
+    - **Besonderheiten**: Einsatz des Modulo-Operators (`%`) zur Prüfung auf gerade/ungerade Zahlen.
+    - **Fähigkeiten**: `if-else` Struktur, Vergleichsoperatoren.
 
-To run a specific class from the command line:
+### Einheit 02: Kontrollstrukturen
 
-```bash
-mvn exec:java -Dexec.mainClass="einheit01.variablen.HelloWorld"
-```
+Der Fokus liegt auf komplexerer Logik durch verschachtelte Entscheidungen und die Automatisierung von Abläufen mittels
+Schleifen.
 
-*(Replace `einheit01.variablen.HelloWorld` with the full package name of the class you wish to run.)*
+- **Notengebung**:
+    - **Nutzen**: Abbildung eines Bewertungssystems basierend auf Punkten.
+    - **Besonderheiten**: Verwendung von `if-else-if` Kaskaden.
+    - **Fähigkeiten**: Logische Verknüpfungen, Bereichsprüfungen.
+- **SwitchBeispiel & SwitchNew**:
+    - **Nutzen**: Effiziente Fallunterscheidung bei vielen Möglichkeiten.
+    - **Besonderheiten**: Vergleich zwischen klassischer `switch`-Syntax und der modernen Java "Arrow Syntax" (`->`).
+    - **Fähigkeiten**: `switch`-Statements, Umgang mit `break` und `default`.
+- **ForSchleife & EinMalEins**:
+    - **Nutzen**: Wiederholung von Codeblöcken und Tabellengenerierung.
+    - **Besonderheiten**: Verschachtelte Schleifen zur Darstellung von Matrix-Strukturen (1x1 Tabelle).
+    - **Fähigkeiten**: `for`-Schleifen (Initialisierung, Bedingung, Inkrement), Schleifensteuerung.
+- **Login**:
+    - **Nutzen**: Einfache Authentifizierungslogik.
+    - **Besonderheiten**: Verwendung von `JOptionPane` für grafische Dialogfenster und String-Vergleich (`equals`,
+      `equalsIgnoreCase`).
+    - **Fähigkeiten**: Umgang mit externen Bibliotheken (Swing), String-Methoden.
+- **Entenhausen**:
+    - **Nutzen**: Lösung komplexer Verteilungsprobleme durch Brute-Force.
+    - **Besonderheiten**: Dreifach verschachtelte Schleifen zur Kombination von Werten.
+    - **Fähigkeiten**: Logische Modellierung von Randbedingungen in Schleifen.
 
-## 📜 Scripts
+### Einheit 03: Vertiefung, Datentypen & Algorithmen
 
-Currently, the project uses standard Maven commands:
+Vertiefung der Kenntnisse über Zeichensätze (`char`), Zufallszahlen und algorithmische Problemstellungen.
 
-- `mvn compile`: Compiles the source code.
-- `mvn clean`: Removes the `target` directory.
+- **Abc & CharacterDemo**:
+    - **Nutzen**: Verständnis der Beziehung zwischen Zahlenwerten (ASCII/Unicode) und Schriftzeichen.
+    - **Besonderheiten**: Casting zwischen `int` und `char`, Iterieren über Buchstaben.
+    - **Fähigkeiten**: Datentyp-Konvertierung, Arbeiten mit dem ASCII-Zeichensatz.
+- **CountDown & Uhrzeit**:
+    - **Nutzen**: Zeitbasierte Abläufe simulieren.
+    - **Besonderheiten**: Verwendung von `Thread.sleep` für Pausen und ternärer Operator zur Formatierung.
+    - **Fähigkeiten**: Exception Handling (Grundlagen), komplexe Schleifenlogik für Zeitformate.
+- **Enthausen (Vertiefung)**:
+    - **Nutzen**: Fortgeschrittene algorithmische Logik mit spezifischen Bedingungen.
+    - **Besonderheiten**: Kombination von mathematischen Prüfungen (Summe, Gerade/Ungerade, Größenvergleiche).
+    - **Fähigkeiten**: Komplexe `boolean`-Logik, Effizienzüberlegungen.
+- **PasswordGen**:
+    - **Nutzen**: Automatisierte Generierung sicherer Zeichenfolgen.
+    - **Besonderheiten**: Einsatz von Zufallszahlen (`ThreadLocalRandom`).
+    - **Fähigkeiten**: Generierung von Zufallswerten in bestimmten Bereichen, String-Konkatenation.
+- **ForSonderheiten**:
+    - **Nutzen**: Kontrolle des Schleifenflusses.
+    - **Besonderheiten**: Vorzeitiger Abbruch von Schleifen.
+    - **Fähigkeiten**: Einsatz von `break`.
 
-## 📁 Project Structure
+---
 
-```text
-├── src/main/java/
-│   ├── einheit01/             # Unit 01: Basics
-│   │   ├── einlesen/          # Input handling
-│   │   ├── variablen/         # Variable declarations and basic arithmetic
-│   │   └── verzweigung/       # If/Else branching
-│   ├── einheit02/             # Unit 02: Control Flow
-│   │   ├── schleife/          # For and While loops
-│   │   └── (various classes)  # Switch statements, logic exercises
-│   └── loesung/               # Exercise solutions
-├── pom.xml                    # Maven configuration
-└── README.md                  # This file
-```
+## Zweck
 
-## 🧪 Tests
-
-- **TODO**: Automated tests (JUnit) are not yet implemented in this repository.
-
-## 🔐 Environment Variables
-
-- No specific environment variables are required for this project at this time.
-
-## 📄 License
-
-- **TODO**: Add license information (e.g., MIT, Apache 2.0).
+Dieses Repository dient als **lebendige Dokumentation des Kurses** und wird sukzessive um weitere Beispiele, Experimente
+und Projektkomponenten ergänzt, die im Laufe des Semesters entwickelt werden.

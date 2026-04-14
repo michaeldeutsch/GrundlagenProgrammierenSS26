@@ -1,4 +1,4 @@
-package einheit03;
+package einheit03.zeichen;
 
 public class Abc {
 

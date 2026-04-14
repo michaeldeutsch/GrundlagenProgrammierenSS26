@@ -1,4 +1,4 @@
-package einheit02;
+package einheit02.grundlagen;
 
 public class ZweitesKlasse {
 
