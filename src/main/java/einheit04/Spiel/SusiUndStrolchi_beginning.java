@@ -2,7 +2,7 @@ package einheit04.Spiel;
 
 import java.util.concurrent.ThreadLocalRandom;
 
-public class SusiUndStrolchi {
+public class SusiUndStrolchi_beginning {
     static void main() {
 
         int positionMax = 0;
