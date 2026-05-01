@@ -1,4 +1,4 @@
-package tests.zt1;
+package zt1;
 
 public class GleichungLoesung {
     static void main(String[] args) {
@@ -9,7 +9,7 @@ public class GleichungLoesung {
                 for (int x = 1; x <= 99; x++) {
                     for (int y = 1; y <= 99; y++) {
 
-                        if (a + b == 15 && x + y == 25 && a + x == 24) {
+                        if (a + b == 15 && x + y == 25 && a * x == 24) {
                             System.out.println("a=" + a + ", b=" + b + ", x=" + x + ", y=" + y);
                             count++;
                         }

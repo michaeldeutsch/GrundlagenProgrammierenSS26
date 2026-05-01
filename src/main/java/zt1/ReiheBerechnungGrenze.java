@@ -1,4 +1,4 @@
-package tests.zt1;
+package zt1;
 
 public class ReiheBerechnungGrenze {
     static void main(String[] args) {
