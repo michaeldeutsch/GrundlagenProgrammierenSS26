@@ -1,4 +1,4 @@
-package einheit06;
+package einheit06.spiel;
 
 import java.util.Arrays;
 import java.util.Scanner;
