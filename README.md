@@ -203,3 +203,89 @@ Ausführungsbeispiel (nach `mvn compile`):
     java -cp target/classes zt2.Codierung
 
 Hinweis: Das Repository enthält einen Git pre-commit Hook (scripts/update_readme.sh), der bei jedem Commit geänderte Java-Dateien erkennt und die README-Sektion "Automatisch aktualisierte Beispiele" entsprechend aktualisiert.
+
+---
+
+## Automatisch aktualisierte Beispiele (letzte Änderungen)
+Diese Sektion wird automatisch vor jedem Commit geupdated und listet geänderte Java-Dateien mit einem Ausführungsbeispiel.
+
+### Datei: src/main/java/einheit07/ArraySubsti.java
+Pfad: src/main/java/einheit07/ArraySubsti.java
+Ausführen (nach Kompilierung):
+
+    # Beispiel (nach 'mvn compile' oder IDE-Run):
+    java -cp target/classes <fully.qualified.MainClass>
+
+Hinweis: Ersetze <fully.qualified.MainClass> durch den vollqualifizierten Klassennamen (z.B. zt2.Codierung).
+
+### Datei: src/main/java/einheit07/Divers.java
+Pfad: src/main/java/einheit07/Divers.java
+Ausführen (nach Kompilierung):
+
+    # Beispiel (nach 'mvn compile' oder IDE-Run):
+    java -cp target/classes <fully.qualified.MainClass>
+
+Hinweis: Ersetze <fully.qualified.MainClass> durch den vollqualifizierten Klassennamen (z.B. zt2.Codierung).
+
+### Datei: src/main/java/einheit07/Email.java
+Pfad: src/main/java/einheit07/Email.java
+Ausführen (nach Kompilierung):
+
+    # Beispiel (nach 'mvn compile' oder IDE-Run):
+    java -cp target/classes <fully.qualified.MainClass>
+
+Hinweis: Ersetze <fully.qualified.MainClass> durch den vollqualifizierten Klassennamen (z.B. zt2.Codierung).
+
+### Datei: src/main/java/einheit07/Lottoschein.java
+Pfad: src/main/java/einheit07/Lottoschein.java
+Ausführen (nach Kompilierung):
+
+    # Beispiel (nach 'mvn compile' oder IDE-Run):
+    java -cp target/classes <fully.qualified.MainClass>
+
+Hinweis: Ersetze <fully.qualified.MainClass> durch den vollqualifizierten Klassennamen (z.B. zt2.Codierung).
+
+### Datei: src/main/java/einheit07/Palindrom.java
+Pfad: src/main/java/einheit07/Palindrom.java
+Ausführen (nach Kompilierung):
+
+    # Beispiel (nach 'mvn compile' oder IDE-Run):
+    java -cp target/classes <fully.qualified.MainClass>
+
+Hinweis: Ersetze <fully.qualified.MainClass> durch den vollqualifizierten Klassennamen (z.B. zt2.Codierung).
+
+### Datei: src/main/java/einheit07/Runden.java
+Pfad: src/main/java/einheit07/Runden.java
+Ausführen (nach Kompilierung):
+
+    # Beispiel (nach 'mvn compile' oder IDE-Run):
+    java -cp target/classes <fully.qualified.MainClass>
+
+Hinweis: Ersetze <fully.qualified.MainClass> durch den vollqualifizierten Klassennamen (z.B. zt2.Codierung).
+
+### Datei: src/main/java/einheit07/TreeSetExample.java
+Pfad: src/main/java/einheit07/TreeSetExample.java
+Ausführen (nach Kompilierung):
+
+    # Beispiel (nach 'mvn compile' oder IDE-Run):
+    java -cp target/classes <fully.qualified.MainClass>
+
+Hinweis: Ersetze <fully.qualified.MainClass> durch den vollqualifizierten Klassennamen (z.B. zt2.Codierung).
+
+### Datei: src/main/java/einheit07/Wiederholung.java
+Pfad: src/main/java/einheit07/Wiederholung.java
+Ausführen (nach Kompilierung):
+
+    # Beispiel (nach 'mvn compile' oder IDE-Run):
+    java -cp target/classes <fully.qualified.MainClass>
+
+Hinweis: Ersetze <fully.qualified.MainClass> durch den vollqualifizierten Klassennamen (z.B. zt2.Codierung).
+
+### Datei: src/main/java/zt2/Matrix.java
+Pfad: src/main/java/zt2/Matrix.java
+Ausführen (nach Kompilierung):
+
+    # Beispiel (nach 'mvn compile' oder IDE-Run):
+    java -cp target/classes <fully.qualified.MainClass>
+
+Hinweis: Ersetze <fully.qualified.MainClass> durch den vollqualifizierten Klassennamen (z.B. zt2.Codierung).
