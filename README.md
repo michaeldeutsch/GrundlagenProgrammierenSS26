@@ -2,290 +2,94 @@
 
 ## Einführung
 
-Dieses Repository enthält die **Beispiele und Materialien der Lehrveranstaltung _Grundlagen Programmieren_** im
-Sommersemester 2026.  
-Es dokumentiert den **Fortschritt der Vorlesung** und stellt den Studierenden den **während der Einheiten entwickelten
-Code** zur Verfügung.
+Dieses Repository enthält die Beispiele und Materialien der Lehrveranstaltung "Grundlagen Programmieren" (Sommersemester 2026).
+Es dokumentiert den Verlauf der Vorlesungen und stellt die während der Einheiten entwickelten Programme bereit.
 
-Das Repository wächst im Laufe des Semesters und spiegelt die **chronologische Entwicklung von Themen, Werkzeugen und
-Programmierkonzepten** wider, die in der LV eingeführt werden.
-
-Studierende können dieses Repository nutzen, um:
-
-- auf LV-Beispiele zuzugreifen
-- besprochene Technologien zu vertiefen
-- den Kursfortschritt nachzuverfolgen
-- den aktuellsten Code aus der Vorlesung abzurufen
+Zielgruppe: Studierende, die Konzepte der imperativen Programmierung, Kontrollstrukturen, Datentypen und einfache Algorithmen erlernen.
 
 ---
 
-## Repository-Struktur
+## Projektstruktur (Kurz)
 
-Das Projekt folgt einer **standardmäßigen Maven-basierten Java-Struktur**.
+Konvention: Maven-Layout
 
-```text
-src
- └─ main
-     ├─ java
-     │   ├─ einheit01          # Grundlagen: Variablen, Input, Verzweigung
-     │   │   ├─ einlesen       # Scanner-Nutzung
-     │   │   ├─ variablen      # Datentypen, Berechnungen (BMI, Rechner)
-     │   │   └─ verzweigung    # If/Else-Logik
-     │   ├─ einheit02          # Kontrollstrukturen: Switch, Schleifen
-     │   │   ├─ entscheidungen # If/Else-Kaskaden, Switch-Syntax
-     │   │   ├─ mathematik     # Summenformeln, Berechnungen
-     │   │   ├─ schleife       # For/While, Logik (Entenhausen, Login)
-     │   │   └─ grundlagen     # Recap & Einführung
-     │   ├─ einheit03          # Vertiefung: Datentypen, Algorithmen
-     │   │   ├─ zeichen        # Arbeiten mit char & ASCII
-     │   │   ├─ zeit           # Simulation von Zeitabläufen
-     │   │   ├─ algorithmen    # Passwort-Gen, komplexe Rätsel
-     │   │   └─ schleife       # Schleifen-Sonderheiten
-     │   └─ loesung            # Musterlösungen zu den Übungen
-     └─ resources
-pom.xml                        # Maven Konfiguration
-```
+- src/main/java/...
+- pom.xml
 
-Jede Einheit (Einheit 01, 02, etc.) enthält die Beispiele und Experimente der jeweiligen Vorlesungseinheit.
-
----
-
-## Aktuelle Inhalte & Beispiele
-
-Die aktuellen Beispiele decken das Setup und die grundlegenden Konzepte der Programmierung ab:
-
-- **Einheit 01: Die ersten Schritte**
-    - Java Projekt-Setup & HelloWorld
-    - Einlesen von Daten via `Scanner`
-    - Einfache Berechnungen (z.B. BMI Rechner)
-    - Erste bedingte Anweisungen (`if-else`)
-- **Einheit 02: Logik & Wiederholungen**
-    - Komplexe Verzweigungen & `switch` (inkl. moderne Switch-Syntax)
-    - Schleifen-Konstrukte (`for`, `while`)
-    - Praktische Anwendungen (Einmaleins, Summenformel, Login-Logik)
-- **Einheit 03: Vertiefung & Datentypen**
-    - Arbeiten mit `char` und ASCII-Werten
-    - Generierung von Zufallszahlen (`ThreadLocalRandom`)
-    - Verschachtelte Schleifen & Passwort-Generierung
+Wichtige Paketgruppen:
+- einheit01 – Grundlagen (Variablen, Ein- und Ausgabe, Verzweigungen)
+- einheit02 – Kontrollstrukturen (Switch, Schleifen)
+- einheit03 – Datentypen & Algorithmen (char, Zufall, Passwort-Gen)
+- einheit04..07 – weitere Übungen und Beispiele
+- zt1, zt2 – Zusatzbeispiele / Übungsaufgaben
 
 ---
 
 ## Technologien
 
-Im Kurs werden aktuell folgende Technologien und Werkzeuge eingesetzt:
-
-- **Java 25** (OpenJDK)
-- **Maven** (Build-Management & Abhängigkeiten)
-- **IntelliJ IDEA** (Entwicklungsumgebung)
-- **Git** (Versionsverwaltung)
+- Java (OpenJDK)
+- Maven
+- Git
+- Empfohlen: IntelliJ IDEA oder andere Java-IDE
 
 ---
 
-## Kenntnisfortschritt & Lernziele
+## Schnellstart
 
-Nach jeder Einheit sollten bestimmte Kompetenzen erworben worden sein:
+1) Repository klonen:
 
-| Einheit | Schwerpunkt         | Was man nun können sollte                                                                                    |
-|:--------|:--------------------|:-------------------------------------------------------------------------------------------------------------|
-| **01**  | Grundlagen & I/O    | Projekt anlegen, Variablen deklarieren, Benutzereingaben verarbeiten, einfache Fallunterscheidungen treffen. |
-| **02**  | Kontrollstrukturen  | Abläufe mittels Schleifen automatisieren, komplexe Entscheidungslogik mit Switch und If-Kaskaden abbilden.   |
-| **03**  | Datentypen & Zufall | Mit Zeichen (`char`) operieren, Zufallswerte generieren, algorithmische Probleme (z.B. Passwort-Gen) lösen.  |
+   git clone <repository-url>
 
----
+2) Kompilieren (Maven):
 
-## Einrichtung & Ausführung
+   mvn compile
 
-### Repository klonen:
+3) Beispiel ausführen (Beispiel: zt2.Codierung):
 
-```bash
-git clone <repository-url>
-```
+   java -cp target/classes zt2.Codierung
 
-## Einheiten & Beispiele
-
-Hier finden Sie eine detaillierte Übersicht der behandelten Beispiele, deren Nutzen und die vermittelten Konzepte.
-
-### Einheit 01: Grundlagen & I/O
-
-In dieser Einheit werden die Basiskonzepte von Java eingeführt, einschließlich Variablen, Datentypen und einfachem
-Input/Output.
-
-- **HelloWorld**:
-    - **Nutzen**: Erstes Programm zur Überprüfung der Entwicklungsumgebung.
-    - **Besonderheiten**: Verwendung von `String`-Variablen und Konsolenausgabe.
-    - **Fähigkeiten**: Grundstruktur einer Java-Klasse, `main`-Methode, `System.out.println`.
-- **Einlesen**:
-    - **Nutzen**: Interaktion mit dem Benutzer über die Konsole.
-    - **Besonderheiten**: Verwendung der `Scanner`-Klasse zum Einlesen von Text.
-    - **Fähigkeiten**: Import von Klassen, Objektinstanziierung, Variablenzuweisung.
-- **Rechner & BMI_Rechner**:
-    - **Nutzen**: Durchführung einfacher mathematischer Berechnungen.
-    - **Besonderheiten**: Umgang mit verschiedenen numerischen Datentypen (`int`, `double`) und mathematischen
-      Operatoren.
-    - **Fähigkeiten**: Deklaration von Variablen, Wertzuweisung, einfache Arithmetik.
-- **Verzweigung**:
-    - **Nutzen**: Logische Entscheidungen im Programm treffen.
-    - **Besonderheiten**: Einsatz des Modulo-Operators (`%`) zur Prüfung auf gerade/ungerade Zahlen.
-    - **Fähigkeiten**: `if-else` Struktur, Vergleichsoperatoren.
-
-### Einheit 02: Kontrollstrukturen
-
-Der Fokus liegt auf komplexerer Logik durch verschachtelte Entscheidungen und die Automatisierung von Abläufen mittels
-Schleifen.
-
-- **Notengebung**:
-    - **Nutzen**: Abbildung eines Bewertungssystems basierend auf Punkten.
-    - **Besonderheiten**: Verwendung von `if-else-if` Kaskaden.
-    - **Fähigkeiten**: Logische Verknüpfungen, Bereichsprüfungen.
-- **SwitchBeispiel & SwitchNew**:
-    - **Nutzen**: Effiziente Fallunterscheidung bei vielen Möglichkeiten.
-    - **Besonderheiten**: Vergleich zwischen klassischer `switch`-Syntax und der modernen Java "Arrow Syntax" (`->`).
-    - **Fähigkeiten**: `switch`-Statements, Umgang mit `break` und `default`.
-- **ForSchleife & EinMalEins**:
-    - **Nutzen**: Wiederholung von Codeblöcken und Tabellengenerierung.
-    - **Besonderheiten**: Verschachtelte Schleifen zur Darstellung von Matrix-Strukturen (1x1 Tabelle).
-    - **Fähigkeiten**: `for`-Schleifen (Initialisierung, Bedingung, Inkrement), Schleifensteuerung.
-- **Login**:
-    - **Nutzen**: Einfache Authentifizierungslogik.
-    - **Besonderheiten**: Verwendung von `JOptionPane` für grafische Dialogfenster und String-Vergleich (`equals`,
-      `equalsIgnoreCase`).
-    - **Fähigkeiten**: Umgang mit externen Bibliotheken (Swing), String-Methoden.
-- **Entenhausen**:
-    - **Nutzen**: Lösung komplexer Verteilungsprobleme durch Brute-Force.
-    - **Besonderheiten**: Dreifach verschachtelte Schleifen zur Kombination von Werten.
-    - **Fähigkeiten**: Logische Modellierung von Randbedingungen in Schleifen.
-
-### Einheit 03: Vertiefung, Datentypen & Algorithmen
-
-Vertiefung der Kenntnisse über Zeichensätze (`char`), Zufallszahlen und algorithmische Problemstellungen.
-
-- **Abc & CharacterDemo**:
-    - **Nutzen**: Verständnis der Beziehung zwischen Zahlenwerten (ASCII/Unicode) und Schriftzeichen.
-    - **Besonderheiten**: Casting zwischen `int` und `char`, Iterieren über Buchstaben.
-    - **Fähigkeiten**: Datentyp-Konvertierung, Arbeiten mit dem ASCII-Zeichensatz.
-- **CountDown & Uhrzeit**:
-    - **Nutzen**: Zeitbasierte Abläufe simulieren.
-    - **Besonderheiten**: Verwendung von `Thread.sleep` für Pausen und ternärer Operator zur Formatierung.
-    - **Fähigkeiten**: Exception Handling (Grundlagen), komplexe Schleifenlogik für Zeitformate.
-- **Enthausen (Vertiefung)**:
-    - **Nutzen**: Fortgeschrittene algorithmische Logik mit spezifischen Bedingungen.
-    - **Besonderheiten**: Kombination von mathematischen Prüfungen (Summe, Gerade/Ungerade, Größenvergleiche).
-    - **Fähigkeiten**: Komplexe `boolean`-Logik, Effizienzüberlegungen.
-- **PasswordGen**:
-    - **Nutzen**: Automatisierte Generierung sicherer Zeichenfolgen.
-    - **Besonderheiten**: Einsatz von Zufallszahlen (`ThreadLocalRandom`).
-    - **Fähigkeiten**: Generierung von Zufallswerten in bestimmten Bereichen, String-Konkatenation.
-- **Codierung**:
-    - **Nutzen**: Einführung in einfache Verschlüsselungsverfahren (Caesar-Chiffre).
-    - **Besonderheiten**: Eingabe über `Scanner`, Validierung der Verschiebung (1–3), Verschlüsselung nur für Kleinbuchstaben.
-    - **Fähigkeiten**: Methoden schreiben, Zeichenmanipulation, modulo-Arithmetik, String-Aufbau.
-- **ForSonderheiten**:
-    - **Nutzen**: Kontrolle des Schleifenflusses.
-    - **Besonderheiten**: Vorzeitiger Abbruch von Schleifen.
-    - **Fähigkeiten**: Einsatz von `break`.
+(Hinweis: Klassen ohne Package-Pfad entsprechend anpassen.)
 
 ---
 
-## Zweck
+## Übersicht: enthaltene Beispiele (Auswahl)
 
-Dieses Repository dient als **lebendige Dokumentation des Kurses** und wird sukzessive um weitere Beispiele, Experimente
-und Projektkomponenten ergänzt, die im Laufe des Semesters entwickelt werden.
+Die vollständige Liste der Quellfiles liegt in src/main/java. Ausgewählte Beispiele:
+
+- einheit01/variablen/HelloWorld.java
+- einheit01/variablen/BmiRechner.java
+- einheit01/einlesen/Einlesen.java
+- einheit02/schleife/EinMalEins.java
+- einheit02/schleife/Entenhausen.java
+- einheit02/entscheidungen/SwitchBeispiel.java
+- einheit03/algorithmen/PasswordGen.java
+- einheit03/zeichen/Abc.java
+- einheit03/zeit/CountDown.java
+- einheit06/strings/WortZufall.java
+- zt2/Codierung.java (Caesar-Verschlüsselung)
+- zt2/Matrix.java (Matrix-Beispiel)
+
+Für die vollständige Dateiliste siehe: src/main/java
 
 ---
 
-## Datei-Hinweis: Codierung
-Die Implementierung der Klasse `zt2.Codierung` ist im Projekt enthalten und demonstriert eine einfache Caesar-Verschlüsselung.
+## Automatisierung
 
-Pfad: src\main\java\zt2\Codierung.java
-
-Ausführungsbeispiel (nach `mvn compile`):
-
-    java -cp target/classes zt2.Codierung
-
-Hinweis: Das Repository enthält einen Git pre-commit Hook (scripts/update_readme.sh), der bei jedem Commit geänderte Java-Dateien erkennt und die README-Sektion "Automatisch aktualisierte Beispiele" entsprechend aktualisiert.
+Das Repository enthält ein Script (scripts/update_readme.sh) und einen Git pre-commit Hook (.git/hooks/pre-commit). Beim Commit werden geänderte Java-Dateien in der README-Sektion "Automatisch aktualisierte Beispiele" aufgenommen. Hinweis: Das Hook-Script benötigt eine sh-kompatible Umgebung (z.B. Git Bash unter Windows).
 
 ---
 
-## Automatisch aktualisierte Beispiele (letzte Änderungen)
-Diese Sektion wird automatisch vor jedem Commit geupdated und listet geänderte Java-Dateien mit einem Ausführungsbeispiel.
+## Beitrag & Workflow
 
-### Datei: src/main/java/einheit07/ArraySubsti.java
-Pfad: src/main/java/einheit07/ArraySubsti.java
-Ausführen (nach Kompilierung):
+- Änderungen per Branch + Pull Request
+- Vor jedem Commit wird die README-Sektion automatisch ergänzt (siehe oben)
 
-    # Beispiel (nach 'mvn compile' oder IDE-Run):
-    java -cp target/classes <fully.qualified.MainClass>
+---
 
-Hinweis: Ersetze <fully.qualified.MainClass> durch den vollqualifizierten Klassennamen (z.B. zt2.Codierung).
+## Kontakt
 
-### Datei: src/main/java/einheit07/Divers.java
-Pfad: src/main/java/einheit07/Divers.java
-Ausführen (nach Kompilierung):
+Bei Fragen zur Vorlesung: Kursleitung oder Tutorien kontaktieren.
 
-    # Beispiel (nach 'mvn compile' oder IDE-Run):
-    java -cp target/classes <fully.qualified.MainClass>
+---
 
-Hinweis: Ersetze <fully.qualified.MainClass> durch den vollqualifizierten Klassennamen (z.B. zt2.Codierung).
-
-### Datei: src/main/java/einheit07/Email.java
-Pfad: src/main/java/einheit07/Email.java
-Ausführen (nach Kompilierung):
-
-    # Beispiel (nach 'mvn compile' oder IDE-Run):
-    java -cp target/classes <fully.qualified.MainClass>
-
-Hinweis: Ersetze <fully.qualified.MainClass> durch den vollqualifizierten Klassennamen (z.B. zt2.Codierung).
-
-### Datei: src/main/java/einheit07/Lottoschein.java
-Pfad: src/main/java/einheit07/Lottoschein.java
-Ausführen (nach Kompilierung):
-
-    # Beispiel (nach 'mvn compile' oder IDE-Run):
-    java -cp target/classes <fully.qualified.MainClass>
-
-Hinweis: Ersetze <fully.qualified.MainClass> durch den vollqualifizierten Klassennamen (z.B. zt2.Codierung).
-
-### Datei: src/main/java/einheit07/Palindrom.java
-Pfad: src/main/java/einheit07/Palindrom.java
-Ausführen (nach Kompilierung):
-
-    # Beispiel (nach 'mvn compile' oder IDE-Run):
-    java -cp target/classes <fully.qualified.MainClass>
-
-Hinweis: Ersetze <fully.qualified.MainClass> durch den vollqualifizierten Klassennamen (z.B. zt2.Codierung).
-
-### Datei: src/main/java/einheit07/Runden.java
-Pfad: src/main/java/einheit07/Runden.java
-Ausführen (nach Kompilierung):
-
-    # Beispiel (nach 'mvn compile' oder IDE-Run):
-    java -cp target/classes <fully.qualified.MainClass>
-
-Hinweis: Ersetze <fully.qualified.MainClass> durch den vollqualifizierten Klassennamen (z.B. zt2.Codierung).
-
-### Datei: src/main/java/einheit07/TreeSetExample.java
-Pfad: src/main/java/einheit07/TreeSetExample.java
-Ausführen (nach Kompilierung):
-
-    # Beispiel (nach 'mvn compile' oder IDE-Run):
-    java -cp target/classes <fully.qualified.MainClass>
-
-Hinweis: Ersetze <fully.qualified.MainClass> durch den vollqualifizierten Klassennamen (z.B. zt2.Codierung).
-
-### Datei: src/main/java/einheit07/Wiederholung.java
-Pfad: src/main/java/einheit07/Wiederholung.java
-Ausführen (nach Kompilierung):
-
-    # Beispiel (nach 'mvn compile' oder IDE-Run):
-    java -cp target/classes <fully.qualified.MainClass>
-
-Hinweis: Ersetze <fully.qualified.MainClass> durch den vollqualifizierten Klassennamen (z.B. zt2.Codierung).
-
-### Datei: src/main/java/zt2/Matrix.java
-Pfad: src/main/java/zt2/Matrix.java
-Ausführen (nach Kompilierung):
-
-    # Beispiel (nach 'mvn compile' oder IDE-Run):
-    java -cp target/classes <fully.qualified.MainClass>
-
-Hinweis: Ersetze <fully.qualified.MainClass> durch den vollqualifizierten Klassennamen (z.B. zt2.Codierung).
+(Die Datei wurde automatisch zusammengefasst und an das Projekt angepasst.)
