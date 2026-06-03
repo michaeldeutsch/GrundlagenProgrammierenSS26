@@ -175,6 +175,10 @@ Vertiefung der Kenntnisse über Zeichensätze (`char`), Zufallszahlen und algori
     - **Nutzen**: Automatisierte Generierung sicherer Zeichenfolgen.
     - **Besonderheiten**: Einsatz von Zufallszahlen (`ThreadLocalRandom`).
     - **Fähigkeiten**: Generierung von Zufallswerten in bestimmten Bereichen, String-Konkatenation.
+- **Codierung**:
+    - **Nutzen**: Einführung in einfache Verschlüsselungsverfahren (Caesar-Chiffre).
+    - **Besonderheiten**: Eingabe über `Scanner`, Validierung der Verschiebung (1–3), Verschlüsselung nur für Kleinbuchstaben.
+    - **Fähigkeiten**: Methoden schreiben, Zeichenmanipulation, modulo-Arithmetik, String-Aufbau.
 - **ForSonderheiten**:
     - **Nutzen**: Kontrolle des Schleifenflusses.
     - **Besonderheiten**: Vorzeitiger Abbruch von Schleifen.
@@ -186,3 +190,16 @@ Vertiefung der Kenntnisse über Zeichensätze (`char`), Zufallszahlen und algori
 
 Dieses Repository dient als **lebendige Dokumentation des Kurses** und wird sukzessive um weitere Beispiele, Experimente
 und Projektkomponenten ergänzt, die im Laufe des Semesters entwickelt werden.
+
+---
+
+## Datei-Hinweis: Codierung
+Die Implementierung der Klasse `zt2.Codierung` ist im Projekt enthalten und demonstriert eine einfache Caesar-Verschlüsselung.
+
+Pfad: src\main\java\zt2\Codierung.java
+
+Ausführungsbeispiel (nach `mvn compile`):
+
+    java -cp target/classes zt2.Codierung
+
+Hinweis: Das Repository enthält einen Git pre-commit Hook (scripts/update_readme.sh), der bei jedem Commit geänderte Java-Dateien erkennt und die README-Sektion "Automatisch aktualisierte Beispiele" entsprechend aktualisiert.
